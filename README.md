@@ -24,11 +24,44 @@ The Solution: Students scan QR code and send to WhatsApp. Done. Everything else 
 ## The system has 3 parts  
 
 1. QR code web server, display new QR code every 30 sec.  
-2. WhatsApp number with automation to process incoming messages.  
+2. WhatsApp number with automation to process incoming messages. (usualy a WhatsApp number belongs to company HR department) 
 3. Google Sheet store records
 
    
 To make it simple , we use Google Sheet for records which is free, 24x7 and already has two factor authentications.  
+
+
+## 📋 Prerequisites
+
+- Node.js 20+
+- npm 10+
+- Google Apps Script access
+- Google Cloud Platform credentials
+
+## 🛠 Installation
+
+1. **Setup Node.js environment:**
+   ```bash
+   nvm use 20
+   npm install
+   ```
+
+2. **Configure environment variables:**
+   ```bash
+   cp .env.example .env
+   # Edit .env with your configuration
+   ```
+
+3. **Setup Google Apps Script projects**
+   edit .env and change DEFAULT_SHEET_ID to your google sheet
+   one example can be found at https://docs.google.com/spreadsheets/d/16OPBq7Zydwoe33SNCZYqsvRzbCGQJpB55Dd2F2ot0H0/edit?gid=0#gid=0 
+   
+4. **Run the application:**
+   ```bash
+   node src/app.js
+   ```
+
+The system will start a WhatsApp web client and require linking the WhatsApp number (for HR to recieve attendance records). 
 
 
 
