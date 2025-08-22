@@ -1,0 +1,55 @@
+{
+  "type": "module",
+  "name": "whatsapp",
+  "version": "1.0.0",
+  "main": "index.js",
+  "imports": {
+    "#src/*": "./src/*"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "test:mongo": "node scripts/test-mongo.js",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "postinstall": "patch-package"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.821.0",
+    "@aws-sdk/s3-request-presigner": "^3.823.0",
+    "body-parser": "^1.20.3",
+    "cors": "^2.8.5",
+    "cron": "^3.5.0",
+    "crypto": "^1.0.1",
+    "crypto-js": "^4.2.0",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.2",
+    "express-rate-limit": "^8.0.1",
+    "fs": "^0.0.1-security",
+    "googleapis": "^144.0.0",
+    "helmet": "^8.1.0",
+    "luxon": "^3.5.0",
+    "nodemon": "^3.1.7",
+    "patch-package": "^8.0.0",
+    "perf_hooks": "^0.0.1",
+    "puppeteer": "^24.4.0",
+    "puppeteer-core": "^24.4.0",
+    "qrcode": "^1.5.4",
+    "qrcode-terminal": "^0.12.0",
+    "sqlite3": "^5.1.7",
+    "whatsapp-web.js": "1.31.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.19",
+    "eslint": "^9.17.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-n": "^17.15.0",
+    "globals": "^15.15.0",
+    "prettier": "^3.4.2"
+  }
+}

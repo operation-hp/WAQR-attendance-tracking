@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTP Check-in System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Daily Check-in</h1>
+            <p>Scan the QR code to check in via WhatsApp</p>
+        </header>
+
+        <main>
+            <div class="qr-container">
+                <div id="qr-code">
+                    <!-- QR code will be generated here -->
+                </div>
+                <div class="timer-container">
+                    <div class="timer">
+                        <span id="countdown">30</span>
+                        <span class="timer-label">seconds remaining</span>
+                    </div>
+                </div>
+            </div>
+
+            <div id="error-message" class="error hidden">
+                <p>Unable to generate QR code. </p>
+                <button id="retry-btn">Retry</button>
+            </div>
+
+            <div class="info">
+                <div class="info-item">
+                    <span class="info-icon">🔄</span>
+                    <p>The QR code updates every 30 seconds for security.</p>
+                </div>
+                <div class="info-item">
+                    <span class="info-icon">📱</span>
+                    <p>Scan with your phone to open WhatsApp and send your check-in.</p>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
