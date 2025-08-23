@@ -54,14 +54,14 @@ To make it simple , we use Google Sheet for records which is free, 24x7 and alre
 
 3. **Setup Google Apps Script projects**
    edit .env and change DEFAULT_SHEET_ID to your google sheet
-   one example can be found at https://docs.google.com/spreadsheets/d/16OPBq7Zydwoe33SNCZYqsvRzbCGQJpB55Dd2F2ot0H0/edit?gid=0#gid=0 
+   one example can be found at https://docs.google.com/spreadsheets/d/19vk85xDFVNCZtOUGu0prjAwo8w11BzcWW_9wLa8g9Kw/edit?usp=sharing  
    
-4. **Run the application:**
+5. **Run the application:**
    ```bash
    node src/app.js
    ```
 
-The system will start a WhatsApp web client and require linking the WhatsApp number (for HR to recieve attendance records). 
+The system will start a WhatsApp web client and requires linking the WhatsApp number (for HR to recieve attendance records). 
 
 
 
